@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  background-image: url(img/acai.webp);
+  background-image: url(/img/acai.webp);
   background-size: cover;
   text-shadow: #fff 3px 4px 3px;
 }
@@ -38,7 +38,8 @@ body {
 
 .main {
   width: 100%;
-  height: 80%;
+  height: 87%;
+  padding: 0 2px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -47,21 +48,80 @@ body {
 }
 
 .title {
-  padding: 10px 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   background-color: none;
 }
 
 .title h2 {
+  font-size: 1.4rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+}
+
+.title strong {
+  margin-top: 10px;
+  padding: 2px 10px;
   font-size: 2.5rem;
+  text-shadow: none;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.textform {
+.title button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #872937;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.title button::before,
+.title button::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  animation: animar 1.5s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animar {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.title button:hover {
+  color: #872937;
+  background-color: #fff;
+  border-color: #872937;
+}
+
+.cadastro {
   width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
   padding: 0 5px;
-}
-
-.text h1 {
-  font-size: 3rem;
 }
 
 .form {
@@ -73,7 +133,7 @@ body {
 
 #form {
   width: 100%;
-  margin: 10px;
+  margin: 0 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -98,17 +158,21 @@ label {
 
 .footer {
   width: 100%;
+  height: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #872937;
 }
 
 .footer p {
   margin: 1px 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
   text-shadow: none;
 }
 
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
   .text h1,
   .title h2 {
     font-size: 3rem;
@@ -118,7 +182,7 @@ label {
     font-size: 0.9rem;
   }
 
-  .textform {
+  .cadastro {
     height: 90%;
     display: flex;
     justify-content: center;
@@ -140,3 +204,4 @@ label {
     width: 80%;
   }
 }
+*/

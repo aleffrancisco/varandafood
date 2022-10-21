@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/scripts.js"></script>
     <title>Varanda Food</title>
   </head>
   <body>
     <div class="header">
-      <a href="#"><img src="img/vfperfl.jpg" alt="" /></a>
+      <a href="index.html"><img src="img/vfperfl.jpg" alt="" /></a>
     </div>
     <div class="main">
-      <div class="title">
+      <div class="title" id="title">
         <h2>Promoção Varanda na Copa!</h2>
+        <h1>
+          Cadastre-se e<br />ganhe um açaí do<br /><strong>Varanda Food</strong>
+        </h1>
+        <button class="button" onclick="mostrar();">Eu quero um açaí</button>
       </div>
-      <div class="textform">
-        <div class="text">
-          <h1>Cadastre-se e<br />ganhe um açaí do<br />Varanda Food</h1>
-        </div>
+      <div class="cadastro" id="cadastro">
         <div class="form">
           <form
             action="https://formsubmit.co/alefregistro@hotmail.com"
