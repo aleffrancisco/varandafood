@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/scripts.js"></script>
-    <title>Varanda Food</title>
+    <title>Varanda Food - Promoção Varanda na Copa!</title>
   </head>
   <body>
     <div class="header">
@@ -40,20 +40,32 @@
             <input
               type="tel"
               name="tel"
-              placeholder="Seu telefone..."
+              placeholder="819..."
               pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
               autocomplete="tel-national"
               required
             />
             <label for="">Data de Nascimento:</label>
-            <input type="date" id="date" autocomplete="bday" required />
+            <input
+              type="date"
+              name="bday"
+              id="bday"
+              autocomplete="bday"
+              required
+            />
             <input type="submit" value="Enviar" id="enviar" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/page/index.html"
+            />
           </form>
         </div>
       </div>
     </div>
     <div class="footer">
-      <p>Varanda Food @ Copyright 2022</p>
+      <a href="/page/index.html"><p>Varanda Food @ Copyright 2022</p></a>
     </div>
   </body>
 </html>

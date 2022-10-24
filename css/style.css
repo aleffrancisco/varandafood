@@ -7,7 +7,6 @@
   font-family: "Poppins", sans-serif;
   color: #872937;
   text-decoration: none;
-  /* background-color: #872937; */
   border: none;
 }
 
@@ -148,6 +147,7 @@ input {
 label {
   font-size: 1.5rem;
 }
+
 #enviar {
   color: #fff;
   padding: 5px 10px;
@@ -172,36 +172,4 @@ label {
   text-shadow: none;
 }
 
-/*@media screen and (min-width: 1000px) {
-  .text h1,
-  .title h2 {
-    font-size: 3rem;
-  }
-
-  .footer p {
-    font-size: 0.9rem;
-  }
-
-  .cadastro {
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .text {
-    width: 40%;
-  }
-
-  .form {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-  }
-
-  #form {
-    width: 80%;
-  }
-}
-*/
+/*Obrigado*/
