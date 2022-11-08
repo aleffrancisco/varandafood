@@ -45,6 +45,35 @@ body {
   background: none;
 }
 
+.text {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 0.1rem solid #872937;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.text strong {
+  font-size: 2rem;
+}
+
+.text p {
+  font-size: 1.5rem;
+}
+
+.text a {
+  margin-top: 10px;
+  padding: 5px;
+  color: #fff;
+  text-shadow: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #872937;
+}
+
 .mainlg {
   width: 50%;
   height: 30%;
